@@ -1,5 +1,5 @@
 const speechRecognitionService =
- window.SpeechRecognition || window.webkitSpeechRecognition;
+    window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognitionService = new speechRecognitionService();
 
 const startBtn = document.querySelector(".btn-start");
