@@ -7,7 +7,7 @@ const textLog = document.querySelector(".text-log");
 
 const languages = {
     English: "en-US",
-    Romanian: "ro-RO"
+    Romanian: "ro-RO",
 };
 
 startBtn.addEventListener("click", () => {
@@ -15,7 +15,6 @@ startBtn.addEventListener("click", () => {
     recognitionService.continuous = true;
 
     recognitionService.onresult = handleResult;
-
 
     if (startBtn.classList.contains("btn-pulsating")) {
         stopRecording();
