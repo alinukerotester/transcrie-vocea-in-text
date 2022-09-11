@@ -1,4 +1,5 @@
-const speechRecognitionService = window.SpeechRecognition || window.webkitSpeechRecognition;
+const speechRecognitionService =
+ window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognitionService = new speechRecognitionService();
 
 const startBtn = document.querySelector(".btn-start");
@@ -38,7 +39,7 @@ function determineLanguage() {
 function handleResult(event) {
     const results = [];
     for (const result of event.results) {
-        results.push(`${result[0].transcript}`)
+        results.push(`${result[0].transcript}`);
     }
     textLog.innerHTML += results.at(-1);
 }
